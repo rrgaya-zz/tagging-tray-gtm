@@ -1,0 +1,924 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2019-04-14 00:43:09",
+    "containerVersion": {
+        "path": "accounts/4701727223/containers/11646327/versions/3",
+        "accountId": "4701727223",
+        "containerId": "11646327",
+        "containerVersionId": "3",
+        "name": "Add Checkout",
+        "container": {
+            "path": "accounts/4701727223/containers/11646327",
+            "accountId": "4701727223",
+            "containerId": "11646327",
+            "name": "MASTER",
+            "publicId": "GTM-KXQBSWJ",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1555202550002",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4701727223/containers/11646327/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "8",
+                "name": "ADS - Conversion",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{CONVERSION_ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{CONVERSION_LABEL}}"
+                    }
+                ],
+                "fingerprint": "1555197103868",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "11",
+                "name": "ADS - Conversion Linker",
+                "type": "gclidw",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCrossDomain",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableCookieOverrides",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1555201872351",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "9",
+                "name": "ADS - Remarketing All Pages",
+                "type": "sp",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableDynamicRemarketing",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "customParams",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_category"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ProductCategory}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_pagetype"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{pageCategory}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_prodid"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ProductID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_totalvalue"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ProductPrice}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{CONVERSION_ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customParamsFormat",
+                        "value": "USER_SPECIFIED"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{CONVERSION_LABEL}}"
+                    }
+                ],
+                "fingerprint": "1555196897153",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "7",
+                "name": "ADS - Remarketing Product Page",
+                "type": "sp",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableDynamicRemarketing",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "customParams",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_category"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ProductCategory}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_pagetype"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{pageCategory}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_prodid"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ProductID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "ecomm_totalvalue"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ProductPrice}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "{{CONVERSION_ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "customParamsFormat",
+                        "value": "USER_SPECIFIED"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "{{CONVERSION_LABEL}}"
+                    }
+                ],
+                "fingerprint": "1555196779560",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "1",
+                "name": "GA - Pageviews",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GACONFIG}}"
+                    }
+                ],
+                "fingerprint": "1555183913801",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "10",
+                "name": "GA - Transaction",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_TRANSACTION"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{GACONFIG}}"
+                    }
+                ],
+                "fingerprint": "1555197078588",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "4",
+                "name": "PB Pixel - AddToCart",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "\n<script>\n    //Trecho Pixel Facebook - Search Digital\n    // AddToCart\n    fbq('track', 'AddToCart');\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1555196523504",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "PB Pixel - Pageviews",
+                        "stopOnSetupFailure": true
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "5",
+                "name": "PB Pixel - InitiateCheckout",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n    // Trecho Pixel Facebook - Search Digital\n    // InitiateCheckout\n    fbq('track', 'InitiateCheckout');\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1555202555648",
+                "firingTriggerId": [
+                    "11"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "PB Pixel - Pageviews",
+                        "stopOnSetupFailure": true
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "2",
+                "name": "PB Pixel - Pageviews",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Facebook Pixel Code -->\n<script>\n    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;\n    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;\n    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,\n    document,'script','https://connect.facebook.net/en_US/fbevents.js');\n    \n    fbq('init', {{FACEBOOK_ID}});\n    fbq('track', \"PageView\");\n</script>\n<!-- End Facebook Pixel Code -->"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1555198066935",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "6",
+                "name": "PB Pixel - Purchase",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<!-- Facebook Pixel Code -->\n<script>\n    fbq('track', 'Purchase', {\n        content_type: 'product',\n        content_ids: {{transactionId}},\n        value: {{transactionTotal}},\n        currency: 'BRL'  \n    });\n</script>\n<!-- End Facebook Pixel Code -->"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1555197091264",
+                "firingTriggerId": [
+                    "8"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "PB Pixel - Pageviews",
+                        "stopOnSetupFailure": true
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "tagId": "3",
+                "name": "PB Pixel - ViewContent",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n// Trecho Pixel Facebook - Search Digital\nfbq('track', 'ViewContent', {\n\t content_type: 'product',\n\t content_ids: {{ProductID}},\n\t content_name: {{ProductName}},\n\t content_category: {{ProductCategory}},\n\t value: {{ProductPrice}},\n\t currency: 'BRL'\n});\n</script>\n"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1555196369142",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "setupTag": [
+                    {
+                        "tagName": "PB Pixel - Pageviews",
+                        "stopOnSetupFailure": true
+                    }
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT"
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "triggerId": "7",
+                "name": "Cart",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "cart"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1555196505305"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "triggerId": "11",
+                "name": "Checkout",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "checkout"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1555202550002"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "triggerId": "6",
+                "name": "ProductPage",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{pageCategory}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "Produto"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1555196349382"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "triggerId": "8",
+                "name": "Purchase",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1555197073144"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "4",
+                "name": "CONVERSION_ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "970030556"
+                    }
+                ],
+                "fingerprint": "1555195699278",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "5",
+                "name": "CONVERSION_LABEL",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "wCQeCLzR8wgQ3PvFzgM"
+                    }
+                ],
+                "fingerprint": "1555195886590",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "3",
+                "name": "FACEBOOK_ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "1727627967519362"
+                    }
+                ],
+                "fingerprint": "1555195171277",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "2",
+                "name": "GACONFIG",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "{{GAID}}"
+                    }
+                ],
+                "fingerprint": "1555183881117"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "1",
+                "name": "GAID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "UA-138319605-1"
+                    }
+                ],
+                "fingerprint": "1555183854801",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "9",
+                "name": "ProductCategory",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "category"
+                    }
+                ],
+                "fingerprint": "1555196078701",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "7",
+                "name": "ProductID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "idProduct"
+                    }
+                ],
+                "fingerprint": "1555196027128",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "6",
+                "name": "ProductName",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "nameProduct"
+                    }
+                ],
+                "fingerprint": "1555196010603",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "8",
+                "name": "ProductPrice",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "priceSell"
+                    }
+                ],
+                "fingerprint": "1555196057830",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "12",
+                "name": "pageCategory",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "pageCategory"
+                    }
+                ],
+                "fingerprint": "1555196306370",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "10",
+                "name": "transactionId",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "transactionId"
+                    }
+                ],
+                "fingerprint": "1555196117978",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "variableId": "11",
+                "name": "transactionTotal",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "transactionTotal"
+                    }
+                ],
+                "fingerprint": "1555196140353",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "4701727223",
+                "containerId": "11646327",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1555202582373",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4701727223/containers/11646327/versions/3?apiLink=version"
+    }
+}
